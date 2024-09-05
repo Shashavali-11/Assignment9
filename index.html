@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+
+    <!-- CSS TODAY(05-09-2024) CLASS
+        1) Ways to color in CSS.
+        2) Text Properties.
+        3) Float & Clear Properties.
+        4) BackGround-Image Properties.
+        5) Linear-Gradient.
+        6) Repeating-Linear-Gradient.
+    -->
+
+    <style>
+      .parent {
+        border: 2px solid brown;
+        height: 70vh;
+        width: 30vw;
+        background-color: burlywood;
+      }
+
+      /* End of Parent  || Out box*/
+      .c1 {
+        border: 2px solid rgb(234, 148, 19);
+        height: 100px;
+        width: 100px;
+        background-color: rgb(221, 229, 136);
+        padding: 15px;
+        margin: 15px;
+        float: right;
+      }
+      .i11 {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+        object-position: center;
+      }
+      /* End of image div || 1st box */
+
+      .bc {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        padding: 15px;
+        margin: 10px;
+
+        background-color: red;
+        background-image: linear-gradient(to bottom, orangered, white, green);
+
+        float: left;
+        clear: left;
+      }
+      /* End of 2nd Div || 2nd box */
+
+      .c2 {
+        border: 2px solid rgb(221, 17, 30);
+        height: 100px;
+        width: 100px;
+        background-color: rgb(141, 193, 133);
+        padding: 15px;
+        margin: 15px;
+        background-image: linear-gradient(to bottom left, blue, red);
+
+        float: left;
+      }
+      /* End of 3rd Div || 3rd box */
+
+      .de {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        padding: 15px;
+        margin: 10px;
+
+        background-color: red;
+        background-image: linear-gradient(to bottom left, blue, orange, red);
+
+        float: right;
+        clear: right;
+      }
+      /* End of 4th Div || 4th box */
+
+      .aa {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        padding: 15px;
+        margin: 10px;
+
+        background-color: aquamarine;
+        float: right;
+        clear: left;
+      }
+
+      /* End of 5th Div || 5th box */
+
+      .bb {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        padding: 15px;
+        margin: 10px;
+
+        background-image: repeating-linear-gradient(
+          blueviolet,
+          black,
+          white,
+          red
+        );
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="parent">
+        <div class="c1">
+          <div class="c11">
+            <img
+              class="i11"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSppDaQM4MljXfjkU-kMIR_6ZnaOqOqXmWPA&s"
+              alt="Bumrah"
+            />
+          </div>
+        </div>
+
+        <!-- End of 1st div || 1st Image -->
+
+        <div class="abc">
+          <div class="bc"></div>
+        </div>
+
+        <!-- End of 2nd div || 2nd box -->
+
+        <div class="de">
+          <div class="c21"></div>
+        </div>
+
+        <!-- End of 3rd Div || 3rd box -->
+
+        <div class="c2">
+          <div class="c21"></div>
+        </div>
+
+        <!-- End of 4th Div || 4th box -->
+
+        <div class="aa"></div>
+
+        <!-- End of 5th Div || 5th box -->
+
+        <div class="bb"></div>
+      </div>
+    </center>
+  </body>
+</html>
